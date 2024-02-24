@@ -10,7 +10,7 @@ app.add_middleware(
     allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE"],
-    allow_headers=[""],
+    allow_headers=["*"],
 )
 
 @app.get("/")
@@ -47,4 +47,9 @@ async def calculator_div(number : int):
 @app.get("/calculator/clear/")
 async def clear():
     cal.clear()
+    return cal
+
+@app.get("/calculator/random/")
+async def random_num():
+    cal.ran()
     return cal

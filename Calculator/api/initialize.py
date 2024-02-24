@@ -1,3 +1,4 @@
+import random
 class Calculator:
     def __init__(self) -> None:
         self.num = 0
@@ -24,3 +25,8 @@ class Calculator:
     def div(self, num):
         self.num /= num
         return {"num" : num}
+    
+    def ran(self):
+        self.num = random.randint(-1000000,1000000)
+        print(self.num)
+        return {"num" : self.num}
