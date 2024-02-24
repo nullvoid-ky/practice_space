@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Todos</title>
+</head>
+<body>
+    <h1>Todos</h1>
+    <div class="content">
+        <input type="number" id="number" required>
+        <select id="act_type">
+            <option id="" value="active">+</option>
+            <option id="" value="passive">-</option>
+        </select>
+        <button type="submit" onclick="addData()">Add</button>
+        <button type="submit" onclick="delData()">Delete</button>
+        <button type="submit" onclick="resetData()">Reset</button>
+    </div>
+    <button onclick="clearData()">Clear</button>
+    <script src="script.js"></script>
+</body>
+</html>
