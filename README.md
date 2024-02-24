@@ -1,2 +1,3 @@
-# practice_space
-private_practice_space
+# practice-space safezone
+
+- this project is for practice before do oop-project in other repo

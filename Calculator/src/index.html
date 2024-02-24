@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <p class="display" id="calculator" type="number">0</p>
+    <script src="script.js"></script>
+    <div class="content">
+        <input type="number" id="number" required>
+        <select id="operator">
+            <option id="" value="add">+</option>
+            <option id="" value="sub">-</option>
+            <option id="" value="mul">*</option>
+            <option id="" value="div">/</option>
+        </select>
+        <button type="submit" onclick="showData()">Submit</button>
+    </div>
+    <button onclick="clearData()">Clear</button>
+</body>
+</html>
